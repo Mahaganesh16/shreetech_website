@@ -27,7 +27,7 @@ export default function Hero() {
           {/* Left Column: Headline & Action Buttons (7 Cols) */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             {/* Translucent Glass Pill Badge */}
-            <div className="glass-pill inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-slate-700 text-xs font-mono tracking-wide mb-6">
+            <div className="glass-pill inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-slate-700 text-xs font-semibold tracking-wide mb-6">
               <span className="w-2 h-2 rounded-full bg-sky-500 animate-ping" />
               <span>Enterprise IT & Modern Digital Experiences</span>
             </div>
@@ -100,19 +100,19 @@ export default function Hero() {
                     />
                   </svg>
                   <div className="text-center -mt-6">
-                    <span className="text-2xl font-black text-slate-900 font-mono">85%</span>
-                    <div className="text-[10px] text-slate-500 font-medium">Sprint velocity</div>
+                    <span className="text-3xl font-extrabold text-slate-900 tracking-tight font-stat">85%</span>
+                    <div className="text-[11px] text-slate-500 font-medium">Sprint velocity</div>
                   </div>
                 </div>
               </div>
 
               {/* Status footer inside card */}
-              <div className="mt-8 pt-6 border-t border-slate-200/70 flex items-center justify-between text-xs text-slate-600 font-mono">
+              <div className="mt-8 pt-6 border-t border-slate-200/70 flex items-center justify-between text-xs text-slate-600 font-medium">
                 <span className="flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                   Available for new projects
                 </span>
-                <span className="text-sky-700 font-semibold">150+ Deployed</span>
+                <span className="text-sky-700 font-bold font-stat">150+ Deployed</span>
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@ export default function Hero() {
               </p>
             </div>
             <div className="mt-6">
-              <div className="glass-pill py-2 px-3 rounded-xl text-xs font-mono text-center text-slate-700 font-semibold">
+              <div className="glass-pill py-2 px-3 rounded-xl text-xs text-center text-slate-800 font-bold font-stat">
                 +1 (800) 840-2030
               </div>
             </div>

@@ -44,7 +44,7 @@ export default function Services() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono uppercase tracking-wider text-sky-800 mb-3">
+          <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-sky-800 mb-3">
             <span>Our Services</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -100,7 +100,7 @@ export default function Services() {
                     <span>Discuss Requirement</span>
                     <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                   </button>
-                  <span className="text-[11px] font-mono text-slate-400">0{idx + 1}</span>
+                  <span className="text-xs font-bold text-slate-400 font-stat">0{idx + 1}</span>
                 </div>
               </div>
             );

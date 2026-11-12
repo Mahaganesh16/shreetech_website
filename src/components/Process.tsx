@@ -10,7 +10,7 @@ export default function Process() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono uppercase tracking-wider text-sky-800 mb-3">
+          <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-sky-800 mb-3">
             <span>Our Methodology</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -32,10 +32,10 @@ export default function Process() {
               <div>
                 {/* Step Number & Header */}
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-2xl font-black text-sky-600 font-mono">
+                  <span className="text-2xl sm:text-3xl font-black text-sky-600 font-stat tracking-tight">
                     {step.number}
                   </span>
-                  <span className="glass-pill text-[10px] uppercase tracking-wider font-mono px-3 py-1 rounded-full text-slate-700 font-semibold">
+                  <span className="glass-pill text-[10px] uppercase tracking-wider px-3 py-1 rounded-full text-slate-700 font-bold">
                     Phase {step.number}
                   </span>
                 </div>
@@ -48,7 +48,7 @@ export default function Process() {
 
               {/* Deliverables */}
               <div className="mt-6 pt-4 border-t border-slate-200/60 space-y-2">
-                <div className="text-[11px] font-bold uppercase tracking-wider text-slate-600 font-mono">
+                <div className="text-[11px] font-bold uppercase tracking-wider text-slate-600">
                   Key Deliverables
                 </div>
                 {step.deliverables.map((item, dIdx) => (
