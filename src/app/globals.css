@@ -46,6 +46,14 @@
     letter-spacing: -0.038em;
   }
 
+  /* Developer-crafted human modern number typography */
+  .stat-number, .font-stat {
+    font-family: var(--font-heading);
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    letter-spacing: -0.035em;
+    font-variant-numeric: tabular-nums lining-nums;
+  }
+
   p, span, a, button, input, textarea {
     font-family: var(--font-body);
   }

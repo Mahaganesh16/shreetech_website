@@ -61,7 +61,7 @@ export default function Footer() {
                   Shree Tech
                   <span className="w-1.5 h-1.5 rounded-full bg-sky-500" />
                 </span>
-                <span className="text-[9px] text-slate-500 font-mono tracking-wider uppercase -mt-0.5">
+                <span className="text-[9px] text-slate-500 font-semibold tracking-wider uppercase -mt-0.5">
                   Glassmorphism UI
                 </span>
               </div>
@@ -106,7 +106,7 @@ export default function Footer() {
 
           {/* Quick Links (2 Cols) */}
           <div className="lg:col-span-2">
-            <h4 className="text-xs font-mono uppercase tracking-wider text-slate-800 mb-4 font-bold">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-800 mb-4">
               Navigation
             </h4>
             <ul className="space-y-2 text-sm text-slate-600 font-medium">
@@ -122,7 +122,7 @@ export default function Footer() {
 
           {/* Services (3 Cols) */}
           <div className="lg:col-span-3">
-            <h4 className="text-xs font-mono uppercase tracking-wider text-slate-800 mb-4 font-bold">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-800 mb-4">
               Services
             </h4>
             <ul className="space-y-2 text-sm text-slate-600 font-medium">
@@ -139,14 +139,14 @@ export default function Footer() {
           {/* Technologies & Contact Info (3 Cols) */}
           <div className="lg:col-span-3 space-y-6">
             <div>
-              <h4 className="text-xs font-mono uppercase tracking-wider text-slate-800 mb-3 font-bold">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-slate-800 mb-3">
                 Core Technologies
               </h4>
               <div className="flex flex-wrap gap-1.5">
                 {techLinks.map((t) => (
                   <span
                     key={t}
-                    className="glass-pill px-2.5 py-1 rounded-xl text-[11px] font-mono text-slate-700 font-semibold"
+                    className="glass-pill px-2.5 py-1 rounded-xl text-xs text-slate-700 font-medium"
                   >
                     {t}
                   </span>
@@ -154,14 +154,14 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="space-y-2 text-xs text-slate-600 pt-2 border-t border-slate-200/80 font-mono">
+            <div className="space-y-2 text-xs text-slate-600 pt-2 border-t border-slate-200/80">
               <div className="flex items-center gap-2">
                 <Mail className="w-3.5 h-3.5 text-sky-600" />
                 <span className="font-semibold text-slate-800">contact@shreetech.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-3.5 h-3.5 text-sky-600" />
-                <span className="font-semibold text-slate-800">+1 (800) 840-2030</span>
+                <span className="font-bold text-slate-800 font-stat">+1 (800) 840-2030</span>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-3.5 h-3.5 text-sky-600 mt-0.5" />
@@ -172,7 +172,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-mono">
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-medium">
           <div>
             © 2026 Shree Tech Innovations Inc. All rights reserved.
           </div>

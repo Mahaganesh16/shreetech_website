@@ -25,7 +25,7 @@ export default function Testimonials() {
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono uppercase tracking-wider text-sky-800 mb-3">
+          <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-sky-800 mb-3">
             <span>Client Testimonials</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -57,7 +57,7 @@ export default function Testimonials() {
               </div>
               <div>
                 <div className="text-base font-bold text-slate-900">{active.name}</div>
-                <div className="text-xs text-slate-500 font-mono">
+                <div className="text-xs text-slate-500 font-medium">
                   {active.designation}, <span className="text-sky-700 font-bold">{active.company}</span>
                 </div>
               </div>

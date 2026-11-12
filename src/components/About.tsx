@@ -38,7 +38,7 @@ function StatCounter({ value, suffix = '', label, sublabel }: StatProps) {
 
   return (
     <div ref={ref} className="glass-card glass-card-hover p-6 rounded-2xl">
-      <div className="text-3xl font-extrabold text-slate-900 tracking-tight font-mono">
+      <div className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight font-stat">
         {count}{suffix}
       </div>
       <div className="text-sm font-bold text-slate-800 mt-1">{label}</div>
@@ -66,7 +66,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Column: Heading, Description, Bullet Achievements (6 Cols) */}
           <div className="lg:col-span-6 space-y-6">
-            <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono uppercase tracking-wider text-sky-800">
+            <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-sky-800">
               <span>About Shree Tech</span>
             </div>
 
@@ -125,7 +125,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl glass-panel flex items-center justify-between text-xs text-slate-800">
                   <span className="font-bold text-slate-900">Shree Tech Engineering Labs</span>
-                  <span className="text-slate-600 font-mono">Sprint Planning</span>
+                  <span className="text-slate-600 font-medium">Sprint Planning</span>
                 </div>
               </div>
             </div>

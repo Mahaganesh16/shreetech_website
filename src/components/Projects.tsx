@@ -31,7 +31,7 @@ export default function Projects() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
-            <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-mono uppercase tracking-wider text-sky-800 mb-3">
+            <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-sky-800 mb-3">
               <span>Selected Case Studies</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -92,15 +92,15 @@ export default function Projects() {
                     <span className="glass-pill px-3 py-1 rounded-xl text-xs font-semibold text-slate-800">
                       {project.categoryLabel}
                     </span>
-                    <span className="glass-pill text-xs font-mono text-slate-700 px-2.5 py-1 rounded-xl">
+                    <span className="glass-pill text-xs font-stat font-semibold text-slate-700 px-2.5 py-1 rounded-xl">
                       {project.year}
                     </span>
                   </div>
 
                   {/* Metric Glass Pill at Bottom Right */}
                   <div className="absolute bottom-4 right-4 px-3.5 py-1.5 rounded-2xl glass-panel text-right">
-                    <div className="text-[10px] text-slate-500 font-mono uppercase tracking-wider">{project.metrics.label}</div>
-                    <div className="text-sm font-bold text-sky-700 font-mono">{project.metrics.value}</div>
+                    <div className="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">{project.metrics.label}</div>
+                    <div className="text-sm font-extrabold text-sky-700 font-stat tracking-tight">{project.metrics.value}</div>
                   </div>
                 </div>
 
@@ -123,7 +123,7 @@ export default function Projects() {
                       {project.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="glass-pill px-2.5 py-1 rounded-xl text-xs text-slate-700 font-mono"
+                          className="glass-pill px-2.5 py-1 rounded-xl text-xs text-slate-700 font-medium"
                         >
                           {tech}
                         </span>
@@ -140,7 +140,7 @@ export default function Projects() {
                       <span>View Case Study</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />
                     </button>
-                    <span className="text-xs text-slate-500 font-mono">Enterprise Verified</span>
+                    <span className="text-xs text-slate-500 font-medium">Enterprise Verified</span>
                   </div>
                 </div>
               </div>
@@ -173,7 +173,7 @@ export default function Projects() {
                 {activeModalProject.categoryLabel}
               </span>
               <span className="text-xs text-slate-500 font-medium">Client: {activeModalProject.client}</span>
-              <span className="text-xs text-slate-500 font-mono">Year: {activeModalProject.year}</span>
+              <span className="text-xs text-slate-500 font-stat font-semibold">Year: {activeModalProject.year}</span>
             </div>
 
             <h3 className="text-2xl font-black text-slate-900 mb-2">{activeModalProject.title}</h3>
@@ -181,16 +181,16 @@ export default function Projects() {
 
             <div className="mt-6 p-4 rounded-2xl glass-card flex items-center justify-between">
               <div>
-                <div className="text-xs text-slate-500 font-mono">Primary Impact Metric</div>
-                <div className="text-xl font-bold text-sky-700 font-mono mt-0.5">
+                <div className="text-xs text-slate-500 font-medium">Primary Impact Metric</div>
+                <div className="text-2xl font-black text-sky-700 font-stat tracking-tight mt-0.5">
                   {activeModalProject.metrics.value}
                 </div>
               </div>
-              <div className="text-xs text-slate-600 font-mono font-medium">{activeModalProject.metrics.label}</div>
+              <div className="text-xs text-slate-600 font-semibold">{activeModalProject.metrics.label}</div>
             </div>
 
             <div className="mt-6 space-y-3">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-slate-700 font-mono">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-slate-700">
                 Architectural Highlights
               </h4>
               <div className="space-y-2 text-xs sm:text-sm text-slate-700">
@@ -210,14 +210,14 @@ export default function Projects() {
             </div>
 
             <div className="mt-6 pt-4 border-t border-slate-200/60">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-slate-700 font-mono mb-2">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
                 Technologies Used
               </h4>
               <div className="flex flex-wrap gap-2">
                 {activeModalProject.technologies.map((t) => (
                   <span
                     key={t}
-                    className="glass-pill px-2.5 py-1 rounded-xl text-xs text-slate-700 font-mono font-medium"
+                    className="glass-pill px-2.5 py-1 rounded-xl text-xs text-slate-700 font-medium"
                   >
                     {t}
                   </span>
