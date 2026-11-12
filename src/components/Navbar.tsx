@@ -90,7 +90,7 @@ export default function Navbar() {
                 Shree Tech
                 <span className="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse" />
               </span>
-              <span className="text-[9px] text-slate-500 font-semibold tracking-wider uppercase -mt-0.5">
+              <span className="text-[9px] text-slate-500 font-mono tracking-wider uppercase -mt-0.5">
                 Glassmorphism UI
               </span>
             </div>
