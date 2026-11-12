@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { ArrowRight, Sparkles, Shield, Zap, Video, Mail, MessageSquare, Share2 } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   const scrollTo = (id: string) => {
@@ -24,7 +24,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         {/* Top Hero Headline & Action Container */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
           {/* Left Column: Headline & Action Buttons (6 Cols) */}
           <div className="lg:col-span-6 flex flex-col items-start text-left z-10">
             {/* Translucent Glass Pill Badge */}
@@ -83,108 +83,6 @@ export default function Hero() {
                 unoptimized
                 className="w-full h-auto object-contain scale-100 sm:scale-105 lg:scale-115 transform-gpu drop-shadow-[0_30px_60px_rgba(15,23,42,0.14)] transition-transform duration-500 hover:scale-105 lg:hover:scale-[1.18]"
               />
-            </div>
-          </div>
-        </div>
-
-        {/* 4 Frosted Glass Channels Bar (Directly mirroring the user's reference image cards!) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {/* Card 1: Video Call / Consultation */}
-          <div className="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
-            <div>
-              <div className="flex items-center gap-2 mb-2 text-slate-900 font-bold text-base">
-                <Video className="w-4 h-4 text-orange-600" />
-                <span>Video Call</span>
-              </div>
-              <p className="text-xs text-slate-500 leading-relaxed font-normal">
-                Let&apos;s schedule a 15-minute technical discovery call to review your architecture.
-              </p>
-            </div>
-            <div className="mt-6">
-              <button
-                onClick={() => scrollTo('contact')}
-                className="glass-btn-secondary w-full py-2 px-3 rounded-xl text-xs font-semibold text-slate-800 text-center block cursor-pointer"
-              >
-                Schedule consultation
-              </button>
-            </div>
-          </div>
-
-          {/* Card 2: E-mail Inquiry */}
-          <div className="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
-            <div>
-              <div className="flex items-center gap-2 mb-2 text-slate-900 font-bold text-base">
-                <Mail className="w-4 h-4 text-rose-600" />
-                <span>E-mail</span>
-              </div>
-              <p className="text-xs text-slate-500 leading-relaxed font-normal">
-                Please send us a project brief or requirements doc. We respond within 12 hours.
-              </p>
-            </div>
-            <div className="mt-6">
-              <a
-                href="mailto:contact@shreetech.com"
-                className="glass-btn-secondary w-full py-2 px-3 rounded-xl text-xs font-semibold text-slate-800 text-center block cursor-pointer"
-              >
-                contact@shreetech.com
-              </a>
-            </div>
-          </div>
-
-          {/* Card 3: Direct Hotline */}
-          <div className="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
-            <div>
-              <div className="flex items-center gap-2 mb-2 text-slate-900 font-bold text-base">
-                <MessageSquare className="w-4 h-4 text-orange-600" />
-                <span>Direct Hotline</span>
-              </div>
-              <p className="text-xs text-slate-500 leading-relaxed font-normal">
-                For urgent enterprise inquiries or RFPs, reach our architecture desk directly.
-              </p>
-            </div>
-            <div className="mt-6">
-              <div className="glass-pill py-2 px-3 rounded-xl text-xs text-center text-slate-800 font-bold font-stat">
-                +1 (800) 840-2030
-              </div>
-            </div>
-          </div>
-
-          {/* Card 4: Global Social Media */}
-          <div className="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
-            <div>
-              <div className="flex items-center gap-2 mb-2 text-slate-900 font-bold text-base">
-                <Share2 className="w-4 h-4 text-purple-600" />
-                <span>Social Media</span>
-              </div>
-              <p className="text-xs text-slate-500 leading-relaxed font-normal">
-                Follow our open-source repositories, engineering blogs, and release notes.
-              </p>
-            </div>
-            <div className="mt-6 flex items-center justify-center gap-3">
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-white/80 border border-white hover:bg-white text-slate-700 flex items-center justify-center text-xs font-bold shadow-sm"
-              >
-                GH
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-white/80 border border-white hover:bg-white text-slate-700 flex items-center justify-center text-xs font-bold shadow-sm"
-              >
-                in
-              </a>
-              <a
-                href="https://x.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-white/80 border border-white hover:bg-white text-slate-700 flex items-center justify-center text-xs font-bold shadow-sm"
-              >
-                𝕏
-              </a>
             </div>
           </div>
         </div>
