@@ -55,7 +55,7 @@ export default function Technologies() {
   return (
     <section id="technologies" className="relative py-28 sm:py-36 bg-transparent overflow-hidden">
       {/* Ambient Lighting Blooms for Glass Layers */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[42rem] h-[42rem] bg-sky-200/40 rounded-full blur-[180px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[42rem] h-[42rem] bg-orange-200/25 rounded-full blur-[180px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -95,7 +95,7 @@ export default function Technologies() {
             <div key={group.category} className="space-y-4">
               <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 pb-2 border-b border-slate-200/60">
                 <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-sky-500" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-orange-500 to-rose-500 shadow-sm" />
                   {group.category} Engineering
                 </h3>
                 <span className="text-xs text-slate-500 font-normal">{group.description}</span>
@@ -115,7 +115,7 @@ export default function Technologies() {
                         <Logo className="w-full h-full object-contain" />
                       </div>
                       <div className="overflow-hidden">
-                        <div className="text-sm font-bold text-slate-900 group-hover:text-sky-700 transition-colors">
+                        <div className="text-sm font-bold text-slate-900 group-hover:text-orange-600 transition-colors">
                           {tech.name}
                         </div>
                         <div className="text-[11px] text-slate-500 truncate mt-0.5 font-normal">

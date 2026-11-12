@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const viewport: Viewport = {
-  themeColor: '#eaf2fb',
+  themeColor: '#faf9f6',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -62,7 +62,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-[#eaf2fb] text-[#1e293b] min-h-screen flex flex-col antialiased selection:bg-orange-500/20 selection:text-orange-950">
+      <body className="bg-[#faf9f6] text-[#0f172a] min-h-screen flex flex-col antialiased selection:bg-orange-500/20 selection:text-orange-950">
         {/* Architectural backdrop aesthetic */}
         <div className="arch-silhouette-bg" />
 

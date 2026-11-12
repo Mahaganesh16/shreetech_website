@@ -5,7 +5,7 @@ export default function Process() {
   return (
     <section id="process" className="relative py-28 sm:py-36 bg-transparent overflow-hidden">
       {/* Background Ambient Blooms */}
-      <div className="absolute top-1/2 right-1/4 w-[38rem] h-[38rem] bg-indigo-200/40 rounded-full blur-[180px] pointer-events-none" />
+      <div className="absolute top-1/2 right-1/4 w-[38rem] h-[38rem] bg-orange-200/25 rounded-full blur-[180px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}

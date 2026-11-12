@@ -101,7 +101,7 @@ export default function Navbar() {
                 <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-orange-500 to-rose-600 animate-pulse shadow-sm" />
               </span>
               <span className="text-[9px] text-slate-500 font-semibold tracking-wider uppercase -mt-0.5">
-                Innovations &bull; Glassmorphism UI
+                Innovations 
               </span>
             </div>
           </Link>
@@ -134,9 +134,9 @@ export default function Navbar() {
               onClick={(e) => handleNavClick(e, '#contact')}
               className="glass-btn-primary inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs lg:text-sm font-semibold text-white cursor-pointer shadow-md"
             >
-              <Sparkles className="w-3.5 h-3.5 text-sky-100" />
+              <Sparkles className="w-3.5 h-3.5 text-white/90" />
               <span>Contact Us</span>
-              <ArrowUpRight className="w-4 h-4 text-sky-100" />
+              <ArrowUpRight className="w-4 h-4 text-white/90" />
             </Link>
           </div>
 

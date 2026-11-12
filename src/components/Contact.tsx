@@ -76,8 +76,8 @@ export default function Contact() {
   return (
     <section id="contact" className="relative py-28 sm:py-36 bg-transparent overflow-hidden">
       {/* Background Ambient Blooms */}
-      <div className="absolute top-1/3 -right-32 w-[38rem] h-[38rem] bg-sky-200/40 rounded-full blur-[170px] pointer-events-none" />
-      <div className="absolute bottom-1/3 -left-32 w-[38rem] h-[38rem] bg-indigo-200/40 rounded-full blur-[170px] pointer-events-none" />
+      <div className="absolute top-1/3 -right-32 w-[38rem] h-[38rem] bg-orange-200/25 rounded-full blur-[170px] pointer-events-none" />
+      <div className="absolute bottom-1/3 -left-32 w-[38rem] h-[38rem] bg-rose-200/25 rounded-full blur-[170px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">

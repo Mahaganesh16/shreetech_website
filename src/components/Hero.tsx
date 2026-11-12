@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { ArrowRight, Sparkles, Shield, Zap, Video, Mail, MessageSquare, Share2 } from 'lucide-react';
 
 export default function Hero() {
@@ -23,9 +24,9 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         {/* Top Hero Headline & Action Container */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center mb-16">
-          {/* Left Column: Headline & Action Buttons (7 Cols) */}
-          <div className="lg:col-span-7 flex flex-col items-start text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center mb-16">
+          {/* Left Column: Headline & Action Buttons (6 Cols) */}
+          <div className="lg:col-span-6 flex flex-col items-start text-left z-10">
             {/* Translucent Glass Pill Badge */}
             <div className="glass-pill inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-slate-700 text-xs font-semibold tracking-wide mb-6">
               <span className="w-2 h-2 rounded-full bg-gradient-to-r from-orange-500 to-rose-600 animate-ping" />
@@ -33,7 +34,7 @@ export default function Hero() {
             </div>
 
             {/* Headline with Official Logo Colors */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.12]">
+            <h1 className="text-4xl sm:text-5xl lg:text-[3.35rem] font-black tracking-tight text-slate-900 leading-[1.12]">
               Building Digital Solutions That{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-rose-600 to-purple-600">
                 Move Businesses Forward.
@@ -41,7 +42,7 @@ export default function Hero() {
             </h1>
 
             {/* Description */}
-            <p className="mt-6 text-base sm:text-lg text-slate-600 max-w-2xl font-normal leading-relaxed">
+            <p className="mt-6 text-base sm:text-lg text-slate-600 max-w-xl font-normal leading-relaxed">
               We help businesses transform bold ideas into scalable digital products through innovative
               software engineering, modern cloud technologies, and thoughtful glassmorphism design.
             </p>
@@ -66,61 +67,22 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Column: Hero Frosted Glass Capacity Gauge Card (Inspired directly by user reference) */}
-          <div className="lg:col-span-5 relative">
-            <div className="glass-panel rounded-3xl p-8 sm:p-10 shadow-2xl relative">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-                <div>
-                  <h3 className="text-2xl font-black text-slate-900 tracking-tight leading-tight">
-                    Engineering Capacity & SLA
-                  </h3>
-                  <p className="text-xs text-slate-500 font-normal mt-1 max-w-[240px]">
-                    Active sprint squads open for Q1/Q2 enterprise architecture engagements.
-                  </p>
-                </div>
+          {/* Right Column: Hero Visual with right-image.png (Expanded large presentation) */}
+          <div className="lg:col-span-6 relative flex items-center justify-center lg:justify-end">
+            {/* Ambient warm glow behind visual */}
+            <div className="absolute -inset-8 bg-gradient-to-tr from-orange-300/35 via-rose-300/25 to-purple-300/20 rounded-full blur-3xl -z-10 pointer-events-none" />
 
-                {/* Semicircle Gauge with Logo Brand Gradient */}
-                <div className="relative flex flex-col items-center justify-center shrink-0">
-                  <svg className="w-32 h-20 overflow-visible" viewBox="0 0 100 55">
-                    <defs>
-                      <linearGradient id="logoGaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stopColor="#ff6b00" />
-                        <stop offset="60%" stopColor="#c01858" />
-                        <stop offset="100%" stopColor="#8b5cf6" />
-                      </linearGradient>
-                    </defs>
-                    {/* Background track */}
-                    <path
-                      d="M 10 50 A 40 40 0 0 1 90 50"
-                      fill="none"
-                      stroke="#cbd5e1"
-                      strokeWidth="8"
-                      strokeLinecap="round"
-                    />
-                    {/* Progress arc (70% - 85%) in Logo Colors */}
-                    <path
-                      d="M 10 50 A 40 40 0 0 1 76 18"
-                      fill="none"
-                      stroke="url(#logoGaugeGrad)"
-                      strokeWidth="8"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                  <div className="text-center -mt-6">
-                    <span className="text-3xl font-extrabold text-slate-900 tracking-tight font-stat">85%</span>
-                    <div className="text-[11px] text-slate-500 font-medium">Sprint velocity</div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Status footer inside card */}
-              <div className="mt-8 pt-6 border-t border-slate-200/70 flex items-center justify-between text-xs text-slate-600 font-medium">
-                <span className="flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  Available for new projects
-                </span>
-                <span className="text-orange-700 font-bold font-stat">150+ Deployed</span>
-              </div>
+            {/* Technology & UI/UX Illustration: right-image.png */}
+            <div className="relative w-full max-w-2xl lg:max-w-none flex items-center justify-center lg:justify-end">
+              <Image
+                src="/images/right-image.png"
+                alt="Modern Software Engineering & UI/UX Architecture"
+                width={1338}
+                height={746}
+                priority
+                unoptimized
+                className="w-full h-auto object-contain scale-100 sm:scale-105 lg:scale-115 transform-gpu drop-shadow-[0_30px_60px_rgba(15,23,42,0.14)] transition-transform duration-500 hover:scale-105 lg:hover:scale-[1.18]"
+              />
             </div>
           </div>
         </div>

@@ -47,7 +47,7 @@ export default function Footer() {
   return (
     <footer className="relative z-10 bg-white/65 backdrop-blur-3xl border-t border-white/90 pt-20 pb-12 overflow-hidden shadow-sm">
       {/* Ambient Lighting in Footer */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-gradient-to-r from-transparent via-sky-300/30 to-transparent blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-gradient-to-r from-transparent via-orange-300/20 to-transparent blur-3xl pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-16 border-b border-slate-200/80">
@@ -121,7 +121,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-slate-600 font-medium">
               {navLinks.slice(0, 6).map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="hover:text-sky-700 transition-colors">
+                  <a href={link.href} className="hover:text-orange-600 transition-colors">
                     {link.label}
                   </a>
                 </li>
@@ -137,7 +137,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-slate-600 font-medium">
               {serviceLinks.map((s) => (
                 <li key={s.label}>
-                  <a href={s.href} className="hover:text-sky-700 transition-colors">
+                  <a href={s.href} className="hover:text-orange-600 transition-colors">
                     {s.label}
                   </a>
                 </li>
@@ -165,15 +165,15 @@ export default function Footer() {
 
             <div className="space-y-2 text-xs text-slate-600 pt-2 border-t border-slate-200/80">
               <div className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-sky-600" />
+                <Mail className="w-3.5 h-3.5 text-orange-600" />
                 <span className="font-semibold text-slate-800">contact@shreetech.com</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-sky-600" />
+                <Phone className="w-3.5 h-3.5 text-orange-600" />
                 <span className="font-bold text-slate-800 font-stat">+1 (800) 840-2030</span>
               </div>
               <div className="flex items-start gap-2">
-                <MapPin className="w-3.5 h-3.5 text-sky-600 mt-0.5" />
+                <MapPin className="w-3.5 h-3.5 text-orange-600 mt-0.5" />
                 <span>San Francisco, CA 94105</span>
               </div>
             </div>

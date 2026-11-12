@@ -59,8 +59,8 @@ export default function About() {
   return (
     <section id="about" className="relative py-28 sm:py-36 bg-transparent overflow-hidden">
       {/* Background Ambient Blooms */}
-      <div className="absolute top-1/2 -left-40 w-[36rem] h-[36rem] bg-sky-200/40 rounded-full blur-[160px] pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-[34rem] h-[34rem] bg-blue-200/40 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/2 -left-40 w-[36rem] h-[36rem] bg-orange-200/35 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute bottom-10 right-0 w-[34rem] h-[34rem] bg-rose-200/30 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
