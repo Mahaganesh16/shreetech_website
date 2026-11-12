@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, ArrowUpRight, Sparkles } from 'lucide-react';
 
 interface NavItem {
@@ -82,8 +83,16 @@ export default function Navbar() {
             onClick={(e) => handleNavClick(e, '#hero')}
             className="flex items-center gap-3 group cursor-pointer select-none"
           >
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl sm:rounded-2xl bg-gradient-to-tr from-sky-500 to-blue-600 border border-white/80 flex items-center justify-center text-white font-black text-sm sm:text-base shadow-[0_6px_18px_rgba(2,132,199,0.28),inset_0_1.5px_2px_rgba(255,255,255,0.7)] group-hover:scale-105 transition-all">
-              S
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-white/85 backdrop-blur-md border border-white/95 p-1 flex items-center justify-center shadow-[0_6px_18px_rgba(2,132,199,0.18),inset_0_1.5px_2px_rgba(255,255,255,0.95)] group-hover:scale-105 transition-all overflow-hidden">
+              <Image
+                src="/images/shreetech-logo-blue.png"
+                alt="Shree Tech Logo"
+                width={512}
+                height={512}
+                sizes="44px"
+                loading="eager"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="flex flex-col">
               <span className="text-sm sm:text-base font-extrabold text-slate-900 tracking-tight flex items-center gap-1.5">

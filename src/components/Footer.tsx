@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, TwitterXIcon } from '@/components/SocialIcons';
 
@@ -44,7 +45,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative bg-white/65 backdrop-blur-3xl border-t border-white/90 pt-20 pb-12 overflow-hidden shadow-sm">
+    <footer className="relative z-10 bg-white/65 backdrop-blur-3xl border-t border-white/90 pt-20 pb-12 overflow-hidden shadow-sm">
       {/* Ambient Lighting in Footer */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-gradient-to-r from-transparent via-sky-300/30 to-transparent blur-3xl pointer-events-none" />
 
@@ -53,8 +54,15 @@ export default function Footer() {
           {/* Brand Info (4 Cols) */}
           <div className="lg:col-span-4 space-y-4">
             <Link href="#hero" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-sky-500 to-blue-600 border border-white flex items-center justify-center text-white font-black text-base shadow-sm">
-                S
+              <div className="w-11 h-11 rounded-2xl bg-white/85 backdrop-blur-md border border-white p-1 flex items-center justify-center shadow-[0_6px_18px_rgba(2,132,199,0.14),inset_0_1.5px_2px_rgba(255,255,255,0.95)] overflow-hidden">
+                <Image
+                  src="/images/shreetech-logo-blue.png"
+                  alt="Shree Tech Logo"
+                  width={512}
+                  height={512}
+                  sizes="44px"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-base font-extrabold text-slate-900 tracking-tight flex items-center gap-1.5">

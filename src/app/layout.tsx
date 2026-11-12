@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import Image from 'next/image';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -60,6 +61,25 @@ export default function RootLayout({
       <body className="bg-[#eaf2fb] text-[#1e293b] min-h-screen flex flex-col antialiased selection:bg-sky-500/25 selection:text-sky-900">
         {/* Architectural backdrop aesthetic */}
         <div className="arch-silhouette-bg" />
+
+        {/* Fixed Blue Brand Watermark Behind Glassmorphism Layers */}
+        <div
+          aria-hidden="true"
+          className="fixed inset-0 z-0 pointer-events-none flex items-center justify-center overflow-hidden"
+        >
+          <div className="relative flex items-center justify-center w-[min(82vw,680px)] h-[min(82vw,680px)]">
+            <div className="absolute inset-12 rounded-full bg-sky-300/25 blur-[90px]" />
+            <Image
+              src="/images/shreetech-logo-blue.png"
+              alt=""
+              width={512}
+              height={512}
+              sizes="(max-width: 768px) 82vw, 680px"
+              loading="eager"
+              className="relative w-full h-full object-contain opacity-[0.18] select-none drop-shadow-[0_0_48px_rgba(2,132,199,0.2)]"
+            />
+          </div>
+        </div>
 
         {/* Floating Frosted Glass Navbar */}
         <Navbar />
