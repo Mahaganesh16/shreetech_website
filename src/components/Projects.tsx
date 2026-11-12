@@ -31,7 +31,7 @@ export default function Projects() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
-            <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-sky-800 mb-3">
+            <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-orange-800 mb-3">
               <span>Selected Case Studies</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -100,16 +100,16 @@ export default function Projects() {
                   {/* Metric Glass Pill at Bottom Right */}
                   <div className="absolute bottom-4 right-4 px-3.5 py-1.5 rounded-2xl glass-panel text-right">
                     <div className="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">{project.metrics.label}</div>
-                    <div className="text-sm font-extrabold text-sky-700 font-stat tracking-tight">{project.metrics.value}</div>
+                    <div className="text-sm font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-rose-600 font-stat tracking-tight">{project.metrics.value}</div>
                   </div>
                 </div>
 
                 {/* Content Box */}
                 <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
                   <div>
-                    <div className="text-xs font-semibold text-sky-700 mb-1">{project.client}</div>
+                    <div className="text-xs font-semibold text-orange-600 mb-1">{project.client}</div>
                     <h3
-                      className="text-xl font-bold text-slate-900 group-hover:text-sky-700 transition-colors cursor-pointer"
+                      className="text-xl font-bold text-slate-900 group-hover:text-orange-600 transition-colors cursor-pointer"
                       onClick={() => setActiveModalProject(project)}
                     >
                       {project.title}
@@ -135,7 +135,7 @@ export default function Projects() {
                   <div className="mt-6 pt-4 border-t border-slate-200/60 flex items-center justify-between">
                     <button
                       onClick={() => setActiveModalProject(project)}
-                      className="text-xs font-bold text-sky-700 hover:text-sky-900 inline-flex items-center gap-1.5 transition-colors cursor-pointer"
+                      className="text-xs font-bold text-orange-600 hover:text-rose-700 inline-flex items-center gap-1.5 transition-colors cursor-pointer"
                     >
                       <span>View Case Study</span>
                       <ArrowUpRight className="w-3.5 h-3.5" />
@@ -169,7 +169,7 @@ export default function Projects() {
             </button>
 
             <div className="flex items-center gap-3 mb-3">
-              <span className="glass-pill px-3 py-1 rounded-xl text-xs font-semibold text-sky-800">
+              <span className="glass-pill px-3 py-1 rounded-xl text-xs font-semibold text-orange-800">
                 {activeModalProject.categoryLabel}
               </span>
               <span className="text-xs text-slate-500 font-medium">Client: {activeModalProject.client}</span>
@@ -182,7 +182,7 @@ export default function Projects() {
             <div className="mt-6 p-4 rounded-2xl glass-card flex items-center justify-between">
               <div>
                 <div className="text-xs text-slate-500 font-medium">Primary Impact Metric</div>
-                <div className="text-2xl font-black text-sky-700 font-stat tracking-tight mt-0.5">
+                <div className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-rose-600 font-stat tracking-tight mt-0.5">
                   {activeModalProject.metrics.value}
                 </div>
               </div>
@@ -195,15 +195,15 @@ export default function Projects() {
               </h4>
               <div className="space-y-2 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-sky-600 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
                   <span>Sub-second response latencies verified under peak production load</span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-sky-600 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
                   <span>Strict TypeScript type safety ensuring zero unhandled runtime exceptions</span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-sky-600 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0 mt-0.5" />
                   <span>Automated CI/CD build and testing pipeline with zero-downtime rolling deploys</span>
                 </div>
               </div>

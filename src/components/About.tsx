@@ -66,7 +66,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Column: Heading, Description, Bullet Achievements (6 Cols) */}
           <div className="lg:col-span-6 space-y-6">
-            <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-sky-800">
+            <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-orange-800">
               <span>About Shree Tech</span>
             </div>
 
@@ -95,7 +95,7 @@ export default function About() {
                 'Guaranteed response SLAs and dedicated ongoing maintenance support'
               ].map((achievement, idx) => (
                 <div key={idx} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-sky-600 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-orange-600 shrink-0 mt-0.5" />
                   <span className="text-sm text-slate-700 font-medium">{achievement}</span>
                 </div>
               ))}
@@ -104,7 +104,7 @@ export default function About() {
             <div className="pt-2">
               <button
                 onClick={() => scrollTo('services')}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-sky-700 hover:text-sky-900 transition-colors group cursor-pointer"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-orange-700 hover:text-rose-800 transition-colors group cursor-pointer"
               >
                 <span>Read More About Our Engineering Practices</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

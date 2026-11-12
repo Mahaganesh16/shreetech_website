@@ -83,24 +83,25 @@ export default function Navbar() {
             onClick={(e) => handleNavClick(e, '#hero')}
             className="flex items-center gap-3 group cursor-pointer select-none"
           >
-            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-white/85 backdrop-blur-md border border-white/95 p-1 flex items-center justify-center shadow-[0_6px_18px_rgba(2,132,199,0.18),inset_0_1.5px_2px_rgba(255,255,255,0.95)] group-hover:scale-105 transition-all overflow-hidden">
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl sm:rounded-2xl bg-white/95 backdrop-blur-md border border-white p-1 flex items-center justify-center shadow-[0_6px_18px_rgba(255,107,0,0.2),inset_0_1.5px_2px_rgba(255,255,255,0.95)] group-hover:scale-105 transition-all overflow-hidden">
               <Image
-                src="/images/shreetech-logo-blue.png"
+                src="/images/logo-icon.png"
                 alt="Shree Tech Logo"
-                width={512}
-                height={512}
+                width={412}
+                height={412}
                 sizes="44px"
                 loading="eager"
+                unoptimized
                 className="w-full h-full object-contain"
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-sm sm:text-base font-extrabold text-slate-900 tracking-tight flex items-center gap-1.5">
+              <span className="text-sm sm:text-base font-black text-slate-900 tracking-tight flex items-center gap-1.5">
                 Shree Tech
-                <span className="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse" />
+                <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-orange-500 to-rose-600 animate-pulse shadow-sm" />
               </span>
-              <span className="text-[9px] text-slate-500 font-mono tracking-wider uppercase -mt-0.5">
-                Glassmorphism UI
+              <span className="text-[9px] text-slate-500 font-semibold tracking-wider uppercase -mt-0.5">
+                Innovations &bull; Glassmorphism UI
               </span>
             </div>
           </Link>
@@ -116,8 +117,8 @@ export default function Navbar() {
                   onClick={(e) => handleNavClick(e, item.href)}
                   className={`px-3.5 lg:px-4 py-1.5 text-xs lg:text-sm font-medium rounded-full transition-all duration-200 cursor-pointer ${
                     isActive
-                      ? 'text-sky-950 bg-white/95 border border-white shadow-[0_2px_10px_rgba(15,60,110,0.08),inset_0_1px_1px_#ffffff] font-semibold'
-                      : 'text-slate-600 hover:text-slate-900 hover:bg-white/60'
+                      ? 'text-orange-950 bg-white/95 border border-white shadow-[0_2px_10px_rgba(255,107,0,0.12),inset_0_1px_1px_#ffffff] font-semibold'
+                      : 'text-slate-600 hover:text-orange-950 hover:bg-white/60'
                   }`}
                 >
                   {item.label}
@@ -163,8 +164,8 @@ export default function Navbar() {
                   onClick={(e) => handleNavClick(e, item.href)}
                   className={`px-4 py-2.5 text-sm font-medium rounded-xl transition-all ${
                     isActive
-                      ? 'text-sky-900 bg-white/90 border border-white font-semibold shadow-sm'
-                      : 'text-slate-700 hover:text-slate-900 hover:bg-white/50'
+                      ? 'text-orange-950 bg-white/95 border border-orange-200/60 font-semibold shadow-sm'
+                      : 'text-slate-700 hover:text-orange-950 hover:bg-white/50'
                   }`}
                 >
                   {item.label}

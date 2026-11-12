@@ -10,7 +10,7 @@ export default function Process() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-sky-800 mb-3">
+          <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-orange-800 mb-3">
             <span>Our Methodology</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -32,7 +32,7 @@ export default function Process() {
               <div>
                 {/* Step Number & Header */}
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-2xl sm:text-3xl font-black text-sky-600 font-stat tracking-tight">
+                  <span className="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-rose-600 font-stat tracking-tight">
                     {step.number}
                   </span>
                   <span className="glass-pill text-[10px] uppercase tracking-wider px-3 py-1 rounded-full text-slate-700 font-bold">
@@ -53,7 +53,7 @@ export default function Process() {
                 </div>
                 {step.deliverables.map((item, dIdx) => (
                   <div key={dIdx} className="flex items-center gap-2 text-xs text-slate-700 font-medium">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-sky-600 shrink-0" />
+                    <CheckCircle2 className="w-3.5 h-3.5 text-orange-600 shrink-0" />
                     <span>{item}</span>
                   </div>
                 ))}

@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-sky-800 mb-3">
+          <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-orange-800 mb-3">
             <span>Why Choose Shree Tech</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -52,13 +52,13 @@ export default function WhyChooseUs() {
                 <div>
                   {/* Top Bar with Icon & Advantage Number */}
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 group-hover:bg-sky-600 group-hover:text-white transition-all shadow-sm">
+                    <div className="w-12 h-12 rounded-2xl bg-orange-50 border border-orange-100 flex items-center justify-center text-orange-600 group-hover:bg-gradient-to-r group-hover:from-orange-500 group-hover:to-rose-600 group-hover:text-white group-hover:border-transparent transition-all shadow-sm">
                       <Icon className="w-5 h-5" />
                     </div>
                     <span className="text-xs font-bold font-stat text-slate-400">0{idx + 1}</span>
                   </div>
 
-                  <h3 className="text-lg font-bold text-slate-900 mb-2.5 group-hover:text-sky-700 transition-colors">
+                  <h3 className="text-lg font-bold text-slate-900 mb-2.5 group-hover:text-orange-600 transition-colors">
                     {item.title}
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed font-normal">
@@ -69,7 +69,7 @@ export default function WhyChooseUs() {
                 {/* Metric pill */}
                 <div className="mt-6 pt-4 border-t border-slate-200/60 flex items-center justify-between">
                   <span className="text-xs text-slate-500 font-medium">Standard</span>
-                  <span className="text-xs font-black font-stat text-sky-700 tracking-tight">{item.metric}</span>
+                  <span className="text-xs font-black font-stat text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-rose-600 tracking-tight">{item.metric}</span>
                 </div>
               </div>
             );

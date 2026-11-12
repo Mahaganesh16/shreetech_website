@@ -98,12 +98,12 @@
 }
 
 .glass-card-hover:hover {
-  background: rgba(255, 255, 255, 0.82);
-  border-color: rgba(2, 132, 199, 0.35);
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 107, 0, 0.35);
   transform: translateY(-4px);
   box-shadow: 
     0 28px 55px -12px rgba(15, 60, 110, 0.12),
-    0 0 25px rgba(56, 189, 248, 0.15),
+    0 0 25px rgba(255, 107, 0, 0.1),
     inset 0 1.5px 2px 0 #ffffff;
 }
 
@@ -144,13 +144,13 @@
 }
 
 .glass-navbar-scrolled {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.48) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.5) 100%);
   backdrop-filter: blur(32px) saturate(210%);
   -webkit-backdrop-filter: blur(32px) saturate(210%);
   border: 1px solid rgba(255, 255, 255, 0.95);
   box-shadow: 
     0 16px 40px -10px rgba(15, 60, 110, 0.12),
-    0 0 20px rgba(56, 189, 248, 0.08),
+    0 0 20px rgba(255, 107, 0, 0.08),
     inset 0 1.5px 2px 0 #ffffff;
 }
 
@@ -177,30 +177,32 @@
 .glass-input:focus {
   outline: none;
   background: rgba(255, 255, 255, 0.92);
-  border-color: rgba(2, 132, 199, 0.6);
+  border-color: rgba(255, 107, 0, 0.6);
   box-shadow: 
-    0 0 20px rgba(2, 132, 199, 0.18),
+    0 0 20px rgba(255, 107, 0, 0.18),
     inset 0 1px 1.5px #ffffff;
 }
 
-/* Frosted Primary Glass Button */
+/* Frosted Primary Glass Button (Matching the official Flame Orange & Magenta Logo) */
 .glass-btn-primary {
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  background: linear-gradient(135deg, #ff6b00 0%, #c01858 55%, #8b5cf6 100%);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 
-    0 10px 25px -4px rgba(2, 132, 199, 0.35),
-    inset 0 1.5px 2px 0 rgba(255, 255, 255, 0.6);
+    0 10px 25px -4px rgba(255, 107, 0, 0.35),
+    0 4px 15px rgba(192, 24, 88, 0.22),
+    inset 0 1.5px 2px 0 rgba(255, 255, 255, 0.65);
   color: #ffffff;
   transition: all 0.25s ease;
 }
 
 .glass-btn-primary:hover {
-  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
-  border-color: rgba(255, 255, 255, 0.6);
+  background: linear-gradient(135deg, #ff7e1a 0%, #d42268 55%, #9d6fff 100%);
+  border-color: rgba(255, 255, 255, 0.8);
   box-shadow: 
-    0 14px 30px -4px rgba(2, 132, 199, 0.45),
+    0 14px 30px -4px rgba(255, 107, 0, 0.45),
+    0 6px 20px rgba(192, 24, 88, 0.32),
     inset 0 1.5px 2px 0 #ffffff;
   transform: translateY(-2px);
 }
@@ -220,7 +222,7 @@
 
 .glass-btn-secondary:hover {
   background: rgba(255, 255, 255, 0.95);
-  border-color: rgba(2, 132, 199, 0.35);
+  border-color: rgba(255, 107, 0, 0.35);
   box-shadow: 
     0 10px 25px rgba(15, 60, 110, 0.09),
     inset 0 1px 2px 0 #ffffff;

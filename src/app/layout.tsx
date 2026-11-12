@@ -41,6 +41,10 @@ export const metadata: Metadata = {
     description:
       'Building Digital Solutions That Move Businesses Forward. Enterprise software engineering & consulting.',
   },
+  icons: {
+    icon: '/images/logo-icon.png',
+    apple: '/images/logo-icon.png',
+  },
 };
 
 export default function RootLayout({
@@ -58,25 +62,26 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-[#eaf2fb] text-[#1e293b] min-h-screen flex flex-col antialiased selection:bg-sky-500/25 selection:text-sky-900">
+      <body className="bg-[#eaf2fb] text-[#1e293b] min-h-screen flex flex-col antialiased selection:bg-orange-500/20 selection:text-orange-950">
         {/* Architectural backdrop aesthetic */}
         <div className="arch-silhouette-bg" />
 
-        {/* Fixed Blue Brand Watermark Behind Glassmorphism Layers */}
+        {/* Fixed Brand Watermark Behind Glassmorphism Layers (Using authentic logo) */}
         <div
           aria-hidden="true"
           className="fixed inset-0 z-0 pointer-events-none flex items-center justify-center overflow-hidden"
         >
           <div className="relative flex items-center justify-center w-[min(82vw,680px)] h-[min(82vw,680px)]">
-            <div className="absolute inset-12 rounded-full bg-sky-300/25 blur-[90px]" />
+            <div className="absolute inset-12 rounded-full bg-gradient-to-tr from-orange-400/20 via-rose-400/20 to-purple-400/20 blur-[90px]" />
             <Image
-              src="/images/shreetech-logo-blue.png"
+              src="/images/logo-icon.png"
               alt=""
-              width={512}
-              height={512}
+              width={412}
+              height={412}
               sizes="(max-width: 768px) 82vw, 680px"
               loading="eager"
-              className="relative w-full h-full object-contain opacity-[0.18] select-none drop-shadow-[0_0_48px_rgba(2,132,199,0.2)]"
+              unoptimized
+              className="relative w-full h-full object-contain opacity-[0.25] select-none drop-shadow-[0_0_48px_rgba(255,107,0,0.3)]"
             />
           </div>
         </div>

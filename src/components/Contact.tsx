@@ -84,7 +84,7 @@ export default function Contact() {
           {/* Left Side: Contact Information (5 Cols) */}
           <div className="lg:col-span-5 space-y-8">
             <div>
-              <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-sky-800 mb-3">
+              <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-orange-800 mb-3">
                 <span>Start a Conversation</span>
               </div>
               <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
@@ -99,14 +99,14 @@ export default function Contact() {
             {/* Direct Contact Channels in Glass Cards */}
             <div className="space-y-4">
               <div className="glass-card glass-card-hover p-4 rounded-3xl flex items-center gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 shrink-0 shadow-sm">
+                <div className="w-12 h-12 rounded-2xl bg-orange-50 border border-orange-100 flex items-center justify-center text-orange-600 shrink-0 shadow-sm">
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
                   <div className="text-xs text-slate-500 font-medium">Direct Inquiries</div>
                   <a
                     href="mailto:contact@shreetech.com"
-                    className="text-sm font-bold text-slate-900 hover:text-sky-700 transition-colors"
+                    className="text-sm font-bold text-slate-900 hover:text-orange-700 transition-colors"
                   >
                     contact@shreetech.com
                   </a>
@@ -114,14 +114,14 @@ export default function Contact() {
               </div>
 
               <div className="glass-card glass-card-hover p-4 rounded-3xl flex items-center gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 shrink-0 shadow-sm">
+                <div className="w-12 h-12 rounded-2xl bg-orange-50 border border-orange-100 flex items-center justify-center text-orange-600 shrink-0 shadow-sm">
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
                   <div className="text-xs text-slate-500 font-medium">Direct Hotline</div>
                   <a
                     href="tel:+18008402030"
-                    className="text-sm font-bold text-slate-900 hover:text-sky-700 transition-colors font-stat"
+                    className="text-sm font-bold text-slate-900 hover:text-orange-700 transition-colors font-stat"
                   >
                     +1 (800) 840-2030
                   </a>
@@ -129,7 +129,7 @@ export default function Contact() {
               </div>
 
               <div className="glass-card glass-card-hover p-4 rounded-3xl flex items-center gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 shrink-0 shadow-sm">
+                <div className="w-12 h-12 rounded-2xl bg-orange-50 border border-orange-100 flex items-center justify-center text-orange-600 shrink-0 shadow-sm">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
@@ -211,7 +211,7 @@ export default function Contact() {
                     {/* Name */}
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                        Full Name <span className="text-sky-600">*</span>
+                        Full Name <span className="text-orange-600">*</span>
                       </label>
                       <input
                         type="text"
@@ -231,7 +231,7 @@ export default function Contact() {
                     {/* Email */}
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                        Business Email <span className="text-sky-600">*</span>
+                        Business Email <span className="text-orange-600">*</span>
                       </label>
                       <input
                         type="email"
@@ -253,7 +253,7 @@ export default function Contact() {
                     {/* Phone */}
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                        Phone Number <span className="text-sky-600">*</span>
+                        Phone Number <span className="text-orange-600">*</span>
                       </label>
                       <input
                         type="tel"
@@ -295,7 +295,7 @@ export default function Contact() {
                   {/* Message */}
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
-                      Project Description <span className="text-sky-600">*</span>
+                      Project Description <span className="text-orange-600">*</span>
                     </label>
                     <textarea
                       rows={4}
@@ -329,7 +329,7 @@ export default function Contact() {
                   </button>
 
                   <div className="flex items-center justify-center gap-1.5 text-center text-xs text-slate-500 font-medium">
-                    <ShieldCheck className="w-3.5 h-3.5 text-sky-600" />
+                    <ShieldCheck className="w-3.5 h-3.5 text-orange-600" />
                     <span>Protected under Non-Disclosure Agreement (NDA)</span>
                   </div>
                 </form>

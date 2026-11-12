@@ -44,7 +44,7 @@ export default function Services() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-sky-800 mb-3">
+          <div className="glass-pill inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider text-orange-800 mb-3">
             <span>Our Services</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
@@ -67,13 +67,13 @@ export default function Services() {
                 className="glass-card glass-card-hover p-7 rounded-3xl flex flex-col justify-between group"
               >
                 <div>
-                  {/* Frosted Icon Box */}
-                  <div className="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 mb-6 group-hover:bg-sky-600 group-hover:text-white group-hover:border-sky-500 transition-all duration-300 shadow-sm">
+                  {/* Frosted Icon Box with Logo Brand Colors */}
+                  <div className="w-12 h-12 rounded-2xl bg-orange-50/80 border border-orange-100 flex items-center justify-center text-orange-600 mb-6 group-hover:bg-gradient-to-r group-hover:from-orange-500 group-hover:to-rose-600 group-hover:text-white group-hover:border-transparent transition-all duration-300 shadow-sm">
                     <Icon className="w-6 h-6" />
                   </div>
 
                   {/* Title & Description */}
-                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-sky-700 transition-colors">
+                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-orange-600 transition-colors">
                     {service.title}
                   </h3>
                   <p className="mt-2.5 text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">
@@ -84,7 +84,7 @@ export default function Services() {
                   <div className="mt-6 pt-4 border-t border-slate-200/60 space-y-2">
                     {service.deliverables.map((item, dIdx) => (
                       <div key={dIdx} className="flex items-center gap-2 text-xs text-slate-700 font-medium">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-sky-600 shrink-0" />
+                        <CheckCircle2 className="w-3.5 h-3.5 text-orange-600 shrink-0" />
                         <span>{item}</span>
                       </div>
                     ))}
@@ -95,7 +95,7 @@ export default function Services() {
                 <div className="mt-6 pt-4 border-t border-slate-200/60 flex items-center justify-between">
                   <button
                     onClick={scrollToContact}
-                    className="text-xs font-bold text-sky-700 hover:text-sky-900 inline-flex items-center gap-1.5 transition-colors cursor-pointer"
+                    className="text-xs font-bold text-orange-600 hover:text-rose-700 inline-flex items-center gap-1.5 transition-colors cursor-pointer"
                   >
                     <span>Discuss Requirement</span>
                     <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />

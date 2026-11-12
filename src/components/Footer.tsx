@@ -53,24 +53,25 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-16 border-b border-slate-200/80">
           {/* Brand Info (4 Cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <Link href="#hero" className="flex items-center gap-3">
-              <div className="w-11 h-11 rounded-2xl bg-white/85 backdrop-blur-md border border-white p-1 flex items-center justify-center shadow-[0_6px_18px_rgba(2,132,199,0.14),inset_0_1.5px_2px_rgba(255,255,255,0.95)] overflow-hidden">
+            <Link href="#hero" className="flex items-center gap-3 group">
+              <div className="w-11 h-11 rounded-2xl bg-white/95 backdrop-blur-md border border-white p-1 flex items-center justify-center shadow-[0_6px_18px_rgba(255,107,0,0.2),inset_0_1.5px_2px_rgba(255,255,255,0.95)] group-hover:scale-105 transition-all overflow-hidden">
                 <Image
-                  src="/images/shreetech-logo-blue.png"
+                  src="/images/logo-icon.png"
                   alt="Shree Tech Logo"
-                  width={512}
-                  height={512}
+                  width={412}
+                  height={412}
                   sizes="44px"
+                  unoptimized
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-base font-extrabold text-slate-900 tracking-tight flex items-center gap-1.5">
+                <span className="text-base font-black text-slate-900 tracking-tight flex items-center gap-1.5">
                   Shree Tech
-                  <span className="w-1.5 h-1.5 rounded-full bg-sky-500" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-orange-500 to-rose-600 shadow-sm" />
                 </span>
                 <span className="text-[9px] text-slate-500 font-semibold tracking-wider uppercase -mt-0.5">
-                  Glassmorphism UI
+                  Innovations &bull; Glassmorphism UI
                 </span>
               </div>
             </Link>
